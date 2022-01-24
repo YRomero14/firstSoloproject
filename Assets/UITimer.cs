@@ -5,17 +5,21 @@ using UnityEngine.UI;
 
 public class UITimer : MonoBehaviour
 {
-    public float timeRemaining = 10;
+    public float timeRemaining = 13f;
     public bool timerIsRunning = false;
     public Text timeText;
     public AudioSource losesound;
+    
     private void Start()
     {
-        // Starts the timer automatically
-        timerIsRunning = true;
+        
     }
 
     void Update()
+    {   if (Input.GetKeyUp(KeyCode.W))
+     {
+        timerIsRunning = true;
+     }
     {  if (timeText == null) return;
      GameObject gameObject = GameObject.Find("player");
      Controller controller = gameObject.GetComponent<Controller>();
@@ -50,4 +54,5 @@ public class UITimer : MonoBehaviour
 
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+}
 }

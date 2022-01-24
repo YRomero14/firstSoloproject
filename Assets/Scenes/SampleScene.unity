@@ -348,7 +348,7 @@ MonoBehaviour:
   ScoreText: {fileID: 802018885}
   Score: 0
   Win: {fileID: 1531009593}
-  speed: 10
+  speed: 30
   points: {fileID: 1489190610}
   winClip: {fileID: 8300000, guid: f19eafcbd223bf64686f1a8844beec8a, type: 3}
   rigidbody2d: {fileID: 323402475}
@@ -367,7 +367,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 2
   m_AngularDrag: 0.05
-  m_GravityScale: 25
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -477,7 +477,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ad7c749a9321ad4d81635867b5eb047, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.33
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -822,10 +822,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 2
     m_AlignByGeometry: 0
@@ -833,7 +833,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: collect 5 pickups in 10 secs to Win
+  m_Text: 'collect 5 pickups in 10 secs to Win
+
+    use WASD to move and W to start'
 --- !u!222 &496390031
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1078,7 +1080,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 
 --- !u!222 &682152478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1099,8 +1101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce3aa0a15b1142418b6c3726f7ccad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
-  timerIsRunning: 1
+  timeRemaining: 13
+  timerIsRunning: 0
   timeText: {fileID: 682152477}
   losesound: {fileID: 219153323}
 --- !u!1 &802018883
